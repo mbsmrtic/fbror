@@ -11,7 +11,7 @@
     <file path="/regions_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361312620482" ignored="false" />
     <file path="$PROJECT_DIR$/../gflue/app/views/week_dates/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361313302364" ignored="false" />
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
-    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361316018423" ignored="false" />
+    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361337752757" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,19 +29,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sg.js.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sg.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="10" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.0">
+            <state line="51" column="29" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.5392405">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.rdoc">
+      <file leaf-file-name="sg_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/gflu/sg_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.21518987">
+            <state line="12" column="7" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,8 +76,8 @@
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
         <option value="$PROJECT_DIR$/README.rdoc" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
       </list>
     </option>
   </component>
@@ -136,6 +136,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gflu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/gflu/sg_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="-9.153846">
@@ -587,16 +634,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
+    <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="10" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.21518987">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rdoc">
+    <entry file="file://$PROJECT_DIR$/app/controllers/gflu/sg_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.21518987">
+        <state line="12" column="7" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="29" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.5392405">
           <folding />
         </state>
       </provider>

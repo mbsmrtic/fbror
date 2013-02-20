@@ -41,7 +41,16 @@ draw = () ->
 
   #loop through weeks - for each week
   #    loop through all the regions adding up the values
-  totUS = for regionName in regions
+  #totUS = for regionName in regions
+  #get the total of every region in one date
+  weeks.forEach((week,iWeek) ->
+    #loop through the regions
+    totForWeek = 0
+    sgData.forEach((regionData, iRegion) ->
+      totForWeek += regionData[iWeek].y
+    )
+    week.US = totForWeek
+  )
 
   parseDate = d3.time.format("%Y-%m-%d").parse
 
