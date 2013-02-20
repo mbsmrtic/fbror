@@ -12,28 +12,20 @@ function MyToolTip(id) {
   	var html;
   
   	function Init(id){
-  		//document.write(
-  		//	'<div id="' + id + '"' +
-  		//	'	style = "' +
-  		//	'	background-color: lightgray; width: 100px; height: 4em; text-align: left;' +
-  		//	'	font: 10px sans-serif;' +
-  		//	'	opacity: 0.7; border-radius: 5px; display: none; padding-left: 1em;">' +
-  		//	'	</div>');
-       ttDiv = d3.select('div#tooltip');
-       ttDiv
+      d3.select('div#tooltip')
            .style('background-color', 'lightgray')
            .style('width', '150px')
            .style('height', '7em')
            .style('text-align', 'left')
            .style('font', '10px sans-serif')
            .style('opacity', '0.7')
-           .style('border-radius', '5px')
+          .style('border-radius', '5px')
            .style('display', 'none')
            .style('padding-left', '1em');
 
 	   div = document.getElementById(id);
 	   if (div == null) return;
-	   
+
 	   if((div.style.width=="" || div.style.height=="")) {
 	   		alert("Both width and height must be set");
 	   		return;

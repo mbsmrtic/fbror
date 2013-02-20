@@ -13,8 +13,9 @@
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
     <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361337752757" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
-    <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361341895534" ignored="false" />
-    <file path="$PROJECT_DIR$/log/development.log" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361342146165" ignored="false" />
+    <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361342296391" ignored="false" />
+    <file path="$PROJECT_DIR$/log/development.log" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361343088871" ignored="false" />
+    <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361342953265" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mytooltip.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mytooltip.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mytooltip.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="30" selection-start="998" selection-end="998" vertical-scroll-proportion="0.4658228">
+            <state line="14" column="30" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sg.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="0.7417722">
               <folding />
             </state>
           </provider>
@@ -52,7 +62,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="-7.1923075">
+            <state line="9" column="25" selection-start="120" selection-end="120" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
@@ -84,11 +94,11 @@
         <option value="$PROJECT_DIR$/app/controllers/gflu/sg_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/gflu/sg/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/mytooltip.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
       </list>
     </option>
   </component>
@@ -244,7 +254,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -262,7 +276,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -287,6 +305,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -303,10 +325,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -728,13 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.21518987">
@@ -749,6 +760,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="25" selection-start="120" selection-end="120" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mytooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="43" selection-start="362" selection-end="377" vertical-scroll-proportion="72.0">
@@ -756,16 +781,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mytooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="998" selection-end="998" vertical-scroll-proportion="0.4658228">
+        <state line="24" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="0.7417722">
           <folding />
         </state>
       </provider>
