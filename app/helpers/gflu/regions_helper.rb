@@ -1,0 +1,2 @@
+module Gflu::RegionsHelper
+end

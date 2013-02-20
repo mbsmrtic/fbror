@@ -1,0 +1,6 @@
+== The Ruby on Rails, D3js section of Flashbit.com
+
+This is my first Ruby on Rails project and it combines the D3 javascript library 
+with ruby on rails.
+
+

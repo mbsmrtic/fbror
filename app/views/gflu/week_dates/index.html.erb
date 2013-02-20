@@ -1,0 +1,12 @@
+<h1>WeekDates#index</h1>
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+  <% @weekDates.each do |weekDate| %>
+      <tr>
+        <td><%= weekDate['date'] %></td>
+      </tr>
+  <% end %>
+</table>

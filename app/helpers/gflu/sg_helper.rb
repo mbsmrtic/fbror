@@ -1,0 +1,2 @@
+module Gflu::SgHelper
+end

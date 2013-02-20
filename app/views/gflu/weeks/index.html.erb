@@ -1,0 +1,13 @@
+<h1>Weeks#index</h1>
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+  <% @weeks.each do |week| %>
+      <tr>
+        <td><%= week.date %></td>
+      </tr>
+  <% end %>
+</table>
+

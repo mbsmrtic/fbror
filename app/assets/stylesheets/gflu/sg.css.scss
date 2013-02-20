@@ -1,0 +1,24 @@
+// Place all the styles related to the sg controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font: 10px sans-serif;
+  position: relative;
+  width: 700px;
+}
+.axis path{
+  fill:none;
+  stroke: black;
+}
+.axis {
+  font-size:8pt;
+  font-family:sans-serif;
+  stroke: black;
+}
+.tick {
+  fill:none;
+  stroke: black;
+}
+td {
+  text-align: left;
+}

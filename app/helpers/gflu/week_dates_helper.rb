@@ -1,0 +1,2 @@
+module Gflu::WeekDatesHelper
+end
