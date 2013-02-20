@@ -9,7 +9,6 @@
 function MyToolTip(id) { 
 	var isInit = -1;
   	var div, divWidth, divHeight;
-  	var xincr = 10, yincr = 10;
   	var html;
   
   	function Init(id){
@@ -20,6 +19,18 @@ function MyToolTip(id) {
   		//	'	font: 10px sans-serif;' +
   		//	'	opacity: 0.7; border-radius: 5px; display: none; padding-left: 1em;">' +
   		//	'	</div>');
+       ttDiv = d3.select('div#tooltip');
+       ttDiv
+           .style('background-color', 'lightgray')
+           .style('width', '150px')
+           .style('height', '7em')
+           .style('text-align', 'left')
+           .style('font', '10px sans-serif')
+           .style('opacity', '0.7')
+           .style('border-radius', '5px')
+           .style('display', 'none')
+           .style('padding-left', '1em');
+
 	   div = document.getElementById(id);
 	   if (div == null) return;
 	   
