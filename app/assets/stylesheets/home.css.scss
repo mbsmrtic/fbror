@@ -1,3 +1,26 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 300%;
+  font-style: italic;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+small {
+  font-size: 30%;
+  font-style: italic;
+}
+
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.center {
+  text-align: center;
+}

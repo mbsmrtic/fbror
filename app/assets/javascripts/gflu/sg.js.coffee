@@ -92,34 +92,44 @@ draw = () ->
 
   bodyMouseMove = () ->
     bmmfn = (g, i) ->
-      iDate = dateFromPos(d3.mouse(this))
-      line = document.getElementById('xline')
-      if (iDate == -1)
-        line.style.display='none'
-      else
-        line.style.display = 'block'
-        dateString = weeks[iDate]['date']
-        date= parseDate(weeks[iDate]['date'])
-        onScale = xScale(date)
-        #add tooltip
-        line.setAttribute('x1', onScale)
-        line.setAttribute('x2', onScale)
-        if (tooltip)
-          ttHtml = "#{ dateString } <br><table><tr><td>United States:</td><td> #{weeks[iDate]['US']}</td></tr>"
-          if (iRegion >= 0)
-            ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
-          ttHtml = ttHtml + "</table>"
-          tooltip.Show(d3.event, ttHtml )
+      setLinePosition(d3.mouse(this))
 
+  setLinePosition = (mousePosition) ->
+    iDate = dateFromPos(mousePosition)
+    line = document.getElementById('xline')
+    if (iDate == -1)
+      line.style.display='none'
+    else
+      line.style.display = 'block'
+      dateString = weeks[iDate]['date']
+      date= parseDate(weeks[iDate]['date'])
+      onScale = xScale(date)
+      #add tooltip
+      line.setAttribute('x1', onScale)
+      line.setAttribute('x2', onScale)
+      if (tooltip)
+        ttHtml = "#{ dateString } <br><table><tr><td>United States:</td><td> #{weeks[iDate]['US']}</td></tr>"
+        if (iRegion >= 0)
+          ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
+        ttHtml = ttHtml + "</table>"
+        tooltip.Show(d3.event, ttHtml )
+
+  regionColor = null
 
   mouseover = () ->
     (g, i) ->
       iRegion = i
+      regionPath = streamgraph[0][i]
+      regionColor = regionPath.style.fill
+      regionPath.style.fill = 'black'
+      setLinePosition(d3.mouse(this))
 
   mouseout = () ->
     (g, i) ->
+      regionPath = streamgraph[0][i]
+      regionPath.style.fill = regionColor
       iRegion = -1
-
+      setLinePosition(d3.mouse(this))
 
   svg = d3.select('body').append('svg')
     .attr('width', WIDTH)
