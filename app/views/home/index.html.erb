@@ -19,7 +19,18 @@ much easier to understand and manipulate.  <br>
 Since I'm using the <a href='http://d3js.org/'>D3</a> JavaScript data visualization library for my data visualizations,
 there is some JavaScript in the site in addition to the Ruby. The version of Ruby on Rails that I'm using
 ships with a JavaScript library called CoffeeScript which makes JavaScript cleaner and sleeker and further
-organizes my code for the site. It's still a work in progress, but I'm sharing the code for this site on github.
+organizes my code for the site. <br>
+For the above visualization of <a href='http://www.google.org/flutrends/us/#US'>Google Flu Trends</a> I'd like to
+add grid lines to show the years, to better show the time of year that the flu peaks. A useful addition
+to the visualization to help in understanding would be a vertical line that appears when you click or
+hover over it; the line could show the height for that region on that date. Visualization is so
+powerful; it would be so much easier to show you than to explain it. The height of the line would be representative
+of the number of flu like illness occurrences on that date in that region.  Finally, I'd like to make an adjustment
+to the stream graph calculations so that it's more centered. That might make a good contribution to the D3 codebase.
+Although it isn't very obvious here, with some data sets stream graphs get very off center. But before
+I do any of those things, I want to add some new time visualizations. I'd like to add a time line that allows
+zooming. I have a flu text data set that contains some interesting history of flu in the United States. I'd like to
+create a time line visualization of that.
 </body>
 
   <div id='tooltip'></div>

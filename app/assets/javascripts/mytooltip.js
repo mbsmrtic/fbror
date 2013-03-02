@@ -15,7 +15,7 @@ function MyToolTip(id) {
       d3.select('div#tooltip')
            .style('background-color', 'lightgray')
            .style('width', '150px')
-           .style('height', '7em')
+           .style('height', '70px')
            .style('text-align', 'left')
            .style('font', '10px sans-serif')
            .style('opacity', '0.7')
@@ -71,14 +71,16 @@ function MyToolTip(id) {
 	    else
 	    	newPosy = curPosy-divHeight-10;
 	
-		if(window.pageYOffset){ 
+		if(window.pageYOffset){
 	   		newPosy= newPosy+ window.pageYOffset;
 	     	newPosx = newPosx + window.pageXOffset;
 	   	}
-	   	else { 
+	   	else {
 	   		newPosy= newPosy+ document.body.scrollTop;
 	     	newPosx = newPosx + document.body.scrollLeft;
 	   	}
+
+        newPosy = newPosy - divHeight;
 	
 	   	div.style.display='block';
 	   	div.style.top= newPosy + "px";
