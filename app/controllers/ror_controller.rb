@@ -1,0 +1,2 @@
+class RorController < ApplicationController
+end

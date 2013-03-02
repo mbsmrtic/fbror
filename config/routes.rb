@@ -1,4 +1,6 @@
 Fbror::Application.routes.draw do
+  get "ror/index"
+
   get "sg/index"
 
   get 'week_dates/index'
@@ -9,6 +11,7 @@ Fbror::Application.routes.draw do
   match 'weeks' => 'gflu::weeks#index'
   match 'week_dates' => 'gflu::week_dates#index'
   match 'sg' => 'gflu::sg#index'
+  match 'ror' => 'ror#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

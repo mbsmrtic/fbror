@@ -80,7 +80,8 @@ function MyToolTip(id) {
 	     	newPosx = newPosx + document.body.scrollLeft;
 	   	}
 
-        newPosy = newPosy - divHeight;
+        newPosy = newPosy - divHeight- 20;
+        newPosx = newPosx - 10;
 	
 	   	div.style.display='block';
 	   	div.style.top= newPosy + "px";

@@ -1,0 +1,42 @@
+<title> Flashbit.com </title>
+
+<body>
+<h2>Google Flu Trends</h2>
+<div id="gf_stream_graph" class=center>
+  <script>
+      drawStreamGraph();
+  </script>
+</div>
+<br>
+<h3>Welcome</h3>
+Welcome to my first page created in <a href='http://en.wikipedia.org/wiki/Ruby_on_rails'>Ruby on Rails</a>!
+This small site is made up of about 90 files but it's now much more scalable and organized and flexible than
+<a href='http://www.flashbit.com'>my site running on Tomcat</a>. The Model-view-controller pattern that is used
+by Ruby on Rails keeps
+the styling and data and layout code separate from each other. Everything has a clear place so nothing feels cluttered.
+The logic of the layout looks clean and clear since it isn't mixed in with styling and data. This is known
+as <a href='http://en.wikipedia.org/wiki/Separation_of_concerns'>separation of concerns</a> which makes the
+code for the site much easier to understand and manipulate.  <br>
+<h3>CoffeeScript</h3>
+Since I'm using the <a href='http://d3js.org/'>D3</a> JavaScript data visualization library for my data visualizations,
+there is some JavaScript in the site in addition to the Ruby. The version of Ruby on Rails that I'm using (3.2)
+ships with a JavaScript library called CoffeeScript which makes JavaScript cleaner and sleeker and further
+organizes my code for the site. <br>
+<h3>Data Visualization Next Steps</h3>
+Now that my Ruby on Rails site is all installed and running, I can focus on the data visualizations!
+For the above visualization of <a href='http://www.google.org/flutrends/us/#US'>Google Flu Trends</a> I'd like to
+add grid lines to show the years, to better show the time of year that the flu peaks. <br><br>
+In addition to the tooltip, I'd like to add a vertical line representing the estimated number of flu like
+illness in that region on that date. This would help the user to understand what the graph is showing.  Streamgraphs
+aren't always intuitive and this would help with that. <br> <br>
+The tooltip should be resized to the size of the content.   <br><br>
+I'd like to make an adjustment
+to the stream graph calculations so that it's more centered. That might make a good contribution to the D3 codebase.
+Although it isn't very obvious here, with some data sets stream graphs get very off center. <br><br>
+But before
+I do any of those things, I want to add some new time visualizations. I'd like to add a time line that allows
+zooming. I have a flu text data set that contains some interesting history of flu in the United States. I'd like to
+create a time line visualization of that.
+</body>
+
+<div id='tooltip'></div>
