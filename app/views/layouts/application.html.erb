@@ -7,16 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>Flashbit <small>'The soul never thinks without a picture.' Aristotle</small></h1>
+<h1>Flashbit<small>'The soul never thinks without a picture.' Aristotle</small></h1>
 <div class=right>
-  <%= mail_to('mbsmrtic@flashbit.com', 'mbsmrtic@flashbit.com', :encode => :hex) %>
+  <%= mail_to('mbsmrtic@flashbit.com', 'mbsmrtic at flashbit.com', :encode => :hex) %>
   <%= link_to image_tag("twitter-bird-blue-on-white.png", :size => '36x36'), 'http://www.twitter.com/mbsmrtic', :target => '_blank'  %>
 </div>
-<%= link_to "D3 Data Visualization JavaScript Library", 'http://www.flashbit.com/d3.html' %>  <br>
-<%= link_to "Regions", regions_path %>  <br>
-<%= link_to "Weeks", weeks_path %>      <br>
-<%= link_to "Week dates", week_dates_path %>  <br>
-<%=  link_to "Google Flu Trends", sg_path %> <br>
+<div>
+<%= link_to "Flashbit on Tomcat", 'http://www.flashbit.com' %>  <br>
+<%=  link_to "Google Flu Trends on Ruby on Rails", sg_path %> <br>
+</div>
 
 <%= yield %>
 

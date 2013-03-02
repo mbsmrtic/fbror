@@ -2,9 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  font: 10px sans-serif;
+  font-family: sans-serif;
+  font-size: 80%;
   position: relative;
-  width: 700px;
 }
 .axis path{
   fill:none;

@@ -16,11 +16,14 @@ small {
 }
 
 .right {
-  float: right;
+  text-align:  right;
 }
 .left {
   float: left;
 }
 .center {
   text-align: center;
+}
+body {
+  width: auto;
 }

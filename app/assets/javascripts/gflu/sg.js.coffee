@@ -18,7 +18,6 @@ regions = null
     graphDiv = d3.select('div#gf_stream_graph')
     console.log('in coffee, got sgData')
     draw() if haveAllData()
-    graphDiv = d3.select('div#gf_stream_graph')
   )
 
   jQuery.getJSON('/week_dates.json', (weeksIn) ->
@@ -131,7 +130,8 @@ draw = () ->
       iRegion = -1
       setLinePosition(d3.mouse(this))
 
-  svg = d3.select('body').append('svg')
+  #svg = d3.select('body').append('svg')
+  svg = d3.select('div#gf_stream_graph').append('svg')
     .attr('width', WIDTH)
     .attr('height', HEIGHT)
     .on('mousemove', bodyMouseMove())
