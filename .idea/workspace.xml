@@ -106,7 +106,7 @@
       <file leaf-file-name="sg.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="67" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.56786704">
+            <state line="142" column="5" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
@@ -941,7 +941,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="67" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.56786704">
+        <state line="142" column="5" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>

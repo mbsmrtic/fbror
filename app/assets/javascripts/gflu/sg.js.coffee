@@ -140,7 +140,7 @@ draw = () ->
     .attr('width', WIDTH)
     .attr('height', HEIGHT)
     .on('touchend', bodyTouchEnd())
-    .on('mousemove', bodyMouseMove())
+    #.on('mousemove', bodyMouseMove())
 
   d3.select('svg')
     .append('line')
