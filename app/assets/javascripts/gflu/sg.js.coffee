@@ -93,7 +93,7 @@ draw = () ->
     bmmfn = (g, i) ->
       setLinePosition(d3.mouse(this), d3.touches(this))
 
-  bodyTouchEnd = () ->
+  bodyTouchStart = () ->
     btmfn = (g, i) ->
       setLinePosition(d3.mouse(this), d3.touches(this))
 
@@ -139,7 +139,7 @@ draw = () ->
   svg = d3.select('div#gf_stream_graph').append('svg')
     .attr('width', WIDTH)
     .attr('height', HEIGHT)
-    .on('touchend', bodyTouchEnd())
+    .on('touchstart', bodyTouchStart())
     #.on('mousemove', bodyMouseMove())
 
   d3.select('svg')

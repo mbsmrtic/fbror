@@ -15,7 +15,7 @@
     <file path="/regions_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361312620482" ignored="false" />
     <file path="$PROJECT_DIR$/../gflue/app/views/week_dates/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361313302364" ignored="false" />
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
-    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362423292227" ignored="false" />
+    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362423851770" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
     <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362241603075" ignored="false" />
     <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362193138818" ignored="false" />
@@ -89,7 +89,10 @@
         <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="20" column="114" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-12.230769">
-              <folding />
+              <folding>
+                <marker date="1362360390278" expanded="true" signature="66:128" placeholder="..." />
+                <marker date="1362360390278" expanded="true" signature="79:120" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,7 +109,7 @@
       <file leaf-file-name="sg.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="5" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.33333334">
+            <state line="95" column="16" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.5922619">
               <folding />
             </state>
           </provider>
@@ -914,7 +917,10 @@
     <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="114" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-12.230769">
-          <folding />
+          <folding>
+            <marker date="1362360390278" expanded="true" signature="66:128" placeholder="..." />
+            <marker date="1362360390278" expanded="true" signature="79:120" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -941,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="5" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.33333334">
+        <state line="95" column="16" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.5922619">
           <folding />
         </state>
       </provider>
