@@ -91,13 +91,13 @@ draw = () ->
 
   bodyMouseMove = () ->
     bmmfn = (g, i) ->
-      setLinePosition(d3.mouse(this), d3.touches(this))
+      setLinePosition(d3.mouse(this))
 
-  bodyTouchStart = () ->
-    btmfn = (g, i) ->
-      setLinePosition(d3.mouse(this), d3.touches(this))
+  #bodyTouchStart = () ->
+  #  btmfn = (g, i) ->
+  #    setLinePosition(d3.mouse(this), d3.touches(this))
 
-  setLinePosition = (mousePosition, touches) ->
+  setLinePosition = (mousePosition) ->
     iDate = dateFromPos(mousePosition)
     line = document.getElementById('xline')
     if (iDate == -1)
@@ -115,7 +115,7 @@ draw = () ->
         if (iRegion >= 0)
           ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
         ttHtml = ttHtml + "</table>"
-        ttHtml = ttHtml + touches.length
+        #ttHtml = ttHtml + touches.length
         tooltip.Show(d3.event, ttHtml )
 
   regionColor = null
@@ -139,8 +139,8 @@ draw = () ->
   svg = d3.select('div#gf_stream_graph').append('svg')
     .attr('width', WIDTH)
     .attr('height', HEIGHT)
-    .on('touchstart', bodyTouchStart())
-    #.on('mousemove', bodyMouseMove())
+    #.on('touchstart', bodyTouchStart())
+    .on('mousemove', bodyMouseMove())
 
   d3.select('svg')
     .append('line')

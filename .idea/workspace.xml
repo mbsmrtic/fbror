@@ -17,7 +17,7 @@
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
     <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362423851770" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
-    <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362241603075" ignored="false" />
+    <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362426472268" ignored="false" />
     <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362193138818" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/web.css" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361893634062" ignored="false" />
     <file path="/web.css" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361893503902" ignored="false" />
@@ -106,10 +106,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sg.js.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sg.js.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="16" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.5922619">
+            <state line="142" column="4" selection-start="4036" selection-end="4036" vertical-scroll-proportion="-12.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mytooltip.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mytooltip.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="0" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.8235294">
               <folding />
             </state>
           </provider>
@@ -139,13 +148,13 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/mytooltip.js" />
         <option value="$PROJECT_DIR$/app/views/ror/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gflu/sg/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/mytooltip.js" />
       </list>
     </option>
   </component>
@@ -900,13 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mytooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="31" selection-start="2631" selection-end="2631" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ror/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="88" selection-start="1295" selection-end="1295" vertical-scroll-proportion="-14.384615">
@@ -947,7 +949,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="16" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.5922619">
+        <state line="142" column="4" selection-start="4036" selection-end="4036" vertical-scroll-proportion="-12.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mytooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="0" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.8235294">
           <folding />
         </state>
       </provider>
