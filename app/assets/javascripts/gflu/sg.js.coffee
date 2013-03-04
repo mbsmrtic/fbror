@@ -93,6 +93,10 @@ draw = () ->
     bmmfn = (g, i) ->
       setLinePosition(d3.mouse(this), d3.touches(this))
 
+  bodyTouchEnd = () ->
+    btmfn = (g, i) ->
+      setLinePosition(d3.mouse(this), d3.touches(this))
+
   setLinePosition = (mousePosition, touches) ->
     iDate = dateFromPos(mousePosition)
     line = document.getElementById('xline')
@@ -135,6 +139,7 @@ draw = () ->
   svg = d3.select('div#gf_stream_graph').append('svg')
     .attr('width', WIDTH)
     .attr('height', HEIGHT)
+    .on('touchend', bodyTouchEnd())
     .on('mousemove', bodyMouseMove())
 
   d3.select('svg')

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="125" />
-    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="149" />
+    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="129" />
+    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="154" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172a782b-b933-49b2-8d28-3f724d2916e6" name="Default" comment="" />
@@ -15,7 +15,7 @@
     <file path="/regions_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361312620482" ignored="false" />
     <file path="$PROJECT_DIR$/../gflue/app/views/week_dates/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361313302364" ignored="false" />
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
-    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362422755822" ignored="false" />
+    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362423292227" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
     <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362241603075" ignored="false" />
     <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362193138818" ignored="false" />
@@ -106,7 +106,7 @@
       <file leaf-file-name="sg.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="40" selection-start="3318" selection-end="3318" vertical-scroll-proportion="0.38108882">
+            <state line="97" column="67" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.56786704">
               <folding />
             </state>
           </provider>
@@ -941,7 +941,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="40" selection-start="3318" selection-end="3318" vertical-scroll-proportion="0.38108882">
+        <state line="97" column="67" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.56786704">
           <folding />
         </state>
       </provider>
