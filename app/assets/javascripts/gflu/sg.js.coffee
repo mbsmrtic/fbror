@@ -91,9 +91,9 @@ draw = () ->
 
   bodyMouseMove = () ->
     bmmfn = (g, i) ->
-      setLinePosition(d3.mouse(this))
+      setLinePosition(d3.mouse(this), d3.touches(this))
 
-  setLinePosition = (mousePosition) ->
+  setLinePosition = (mousePosition, touches) ->
     iDate = dateFromPos(mousePosition)
     line = document.getElementById('xline')
     if (iDate == -1)
@@ -111,7 +111,7 @@ draw = () ->
         if (iRegion >= 0)
           ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
         ttHtml = ttHtml + "</table>"
-        ttHtml = ttHtml + "x: " + mousePosition[0] + "<br>" + "y: " + mousePosition[1] + "<br>" + mousePosition
+        ttHtml = ttHtml + touches
         tooltip.Show(d3.event, ttHtml )
 
   regionColor = null
