@@ -11,7 +11,7 @@
     <file path="/database.yml" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361310324583" ignored="false" />
     <file path="/routes.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362238599354" ignored="false" />
     <file path="/Dummy.txt" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361916799555" ignored="false" />
-    <file path="/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362242383928" ignored="false" />
+    <file path="/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362359980583" ignored="false" />
     <file path="/regions_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361312620482" ignored="false" />
     <file path="$PROJECT_DIR$/../gflue/app/views/week_dates/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361313302364" ignored="false" />
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
@@ -70,20 +70,25 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-20.346153">
-              <folding>
-                <marker date="1362290179125" expanded="true" signature="36:2693" placeholder="..." />
-                <marker date="1362290179125" expanded="true" signature="103:158" placeholder="..." />
-                <marker date="1362290179125" expanded="true" signature="114:151" placeholder="..." />
-              </folding>
+            <state line="43" column="0" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-9.769231">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="65" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.8455056">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="55" selection-start="290" selection-end="290" vertical-scroll-proportion="0.4775281">
+            <state line="10" column="55" selection-start="290" selection-end="290" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -114,12 +119,12 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/gflu/sg/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/mytooltip.js" />
         <option value="$PROJECT_DIR$/app/views/ror/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/gflu/sg/index.html.erb" />
       </list>
     </option>
   </component>
@@ -310,6 +315,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gflu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gflu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -692,7 +723,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="0" width="1260" height="760" extended-state="0" />
+    <frame x="11" y="0" width="1260" height="760" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -703,7 +734,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -843,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="86" selection-start="80" selection-end="80" vertical-scroll-proportion="0.088541664">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ror/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="88" selection-start="1295" selection-end="1295" vertical-scroll-proportion="-14.384615">
@@ -857,20 +881,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-20.346153">
-          <folding>
-            <marker date="1362290179125" expanded="true" signature="36:2693" placeholder="..." />
-            <marker date="1362290179125" expanded="true" signature="103:158" placeholder="..." />
-            <marker date="1362290179125" expanded="true" signature="114:151" placeholder="..." />
-          </folding>
+        <state line="10" column="55" selection-start="290" selection-end="290" vertical-scroll-proportion="-6.5384617">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="290" selection-end="290" vertical-scroll-proportion="0.4775281">
+        <state line="43" column="0" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-9.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="65" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.8455056">
           <folding />
         </state>
       </provider>
