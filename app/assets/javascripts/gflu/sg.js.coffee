@@ -111,6 +111,7 @@ draw = () ->
         if (iRegion >= 0)
           ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
         ttHtml = ttHtml + "</table>"
+        ttHtml = ttHtml + "x: " + mousePosition[0] + "<br>" + "y: " + mousePosition[1] + "<br>" + mousePosition
         tooltip.Show(d3.event, ttHtml )
 
   regionColor = null
