@@ -38,8 +38,8 @@
     <file path="/obesity.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361896139201" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/ror.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361897510966" ignored="false" />
     <file path="/home.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362193289740" ignored="false" />
-    <file path="/home_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361937313546" ignored="false" />
-    <file path="/application.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362290464363" ignored="false" />
+    <file path="/home_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362364714945" ignored="false" />
+    <file path="/application.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362360817945" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/d3/streamgraph/googlefluregions.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361991291298" ignored="false" />
     <file path="$PROJECT_DIR$/log/development.log" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362241869761" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,16 +70,25 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-9.769231">
+            <state line="2" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="-1.3076923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="46" selection-start="82" selection-end="82" vertical-scroll-proportion="0.08607595">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="114" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.89325845">
+            <state line="20" column="114" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-12.230769">
               <folding />
             </state>
           </provider>
@@ -88,7 +97,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="55" selection-start="290" selection-end="290" vertical-scroll-proportion="-6.5384617">
+            <state line="21" column="12" selection-start="733" selection-end="733" vertical-scroll-proportion="-8.807693">
               <folding />
             </state>
           </provider>
@@ -112,7 +121,6 @@
         <option value="$PROJECT_DIR$/app/controllers/gflu/week_dates_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/gflu/sg_controller.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/gflu/week_dates/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gflu/weeks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gflu/regions/index.html.erb" />
@@ -122,9 +130,10 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/mytooltip.js" />
         <option value="$PROJECT_DIR$/app/views/ror/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gflu/sg/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
       </list>
     </option>
   </component>
@@ -724,7 +733,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="0" width="1260" height="760" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -734,7 +743,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,13 +855,6 @@
         <state line="4" column="29" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ror_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
@@ -883,21 +885,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="290" selection-end="290" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-9.769231">
+        <state line="21" column="12" selection-start="733" selection-end="733" vertical-scroll-proportion="-8.807693">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="114" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.89325845">
+        <state line="20" column="114" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-12.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="46" selection-start="82" selection-end="82" vertical-scroll-proportion="0.08607595">
           <folding />
         </state>
       </provider>
