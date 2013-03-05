@@ -61,6 +61,7 @@ draw = () ->
   xAxis =  d3.svg.axis()
     .scale(xScale)
     .orient('bottom')
+    .tickSize(-HEIGHT)
 
 
   #send sgData into the stack/wiggle calculation - it creates
@@ -93,6 +94,11 @@ draw = () ->
     bmmfn = (g, i) ->
       setLinePosition(d3.mouse(this))
 
+  bodyMouseLeave = () ->
+    bmlfn = () ->
+      tooltip.Hide() if (tooltip)
+      console.log('h')
+
   #bodyTouchStart = () ->
   #  btmfn = (g, i) ->
   #    setLinePosition(d3.mouse(this), d3.touches(this))
@@ -115,7 +121,7 @@ draw = () ->
         if (iRegion >= 0)
           ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
         ttHtml = ttHtml + "</table>"
-        ttHtml = ttHtml + mousePosition
+        ttHtml = ttHtml + mousePosition + "<br>" + d3.event.type + " " + d3.event.clientX + " " + d3.event.clientY
         tooltip.Show(d3.event, ttHtml )
 
   regionColor = null
@@ -135,8 +141,11 @@ draw = () ->
       iRegion = -1
       setLinePosition(d3.mouse(this))
 
+  sgElement = d3.select('div#gf_stream_graph')
+    .on('mouseleave', bodyMouseLeave())
+
   #svg = d3.select('body').append('svg')
-  svg = d3.select('div#gf_stream_graph').append('svg')
+  svg = sgElement.append('svg')
     .attr('width', WIDTH)
     .attr('height', HEIGHT)
     #.on('touchstart', bodyTouchStart())

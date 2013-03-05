@@ -8,7 +8,7 @@ body {
 }
 .axis path{
   fill:none;
-  stroke: black;
+  stroke: none;
 }
 .axis {
   font-size:8pt;
@@ -17,7 +17,7 @@ body {
 }
 .tick {
   fill:none;
-  stroke: black;
+  stroke: lightgray;
 }
 td {
   text-align: left;
