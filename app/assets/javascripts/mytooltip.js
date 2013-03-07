@@ -12,7 +12,7 @@ function MyToolTip(id) {
   	var html;
   
   	function Init(id){
-      d3.select('div#tooltip')
+       d3.select('div#tooltip')
            .style('background-color', 'lightgray')
            .style('width', '150px')
            .style('height', '70px')
@@ -60,16 +60,19 @@ function MyToolTip(id) {
 	    	html = strHTML;
 	     	div.innerHTML=html;
 	    }
-	    
+
+        //don't let the tooltip go off the right side
+        //  if we're at the right side, move the tooltip
+        //  to the left of the mouse
 	    if((curPosx+divWidth+10)< width)
 	    	newPosx= curPosx+10;
 	    else
 	    	newPosx = curPosx-divWidth;
 	
-	    if((curPosy+divHeight)< height)
-	    	newPosy= curPosy;
+	    if((curPosy - divHeight) > 0)
+	    	newPosy= curPosy + 10;
 	    else
-	    	newPosy = curPosy-divHeight-10;
+	    	newPosy = curPosy + divHeight + 10;
 	
 		if(window.pageYOffset){
 	   		newPosy= newPosy+ window.pageYOffset;
@@ -81,8 +84,7 @@ function MyToolTip(id) {
 	   	}
 
         newPosy = newPosy - divHeight- 20;
-        newPosx = newPosx - 10;
-	
+
 	   	div.style.display='block';
 	   	div.style.top= newPosy + "px";
 	   	div.style.left= newPosx+ "px";
