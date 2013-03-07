@@ -1,6 +1,4 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+# The Google Flu Trends streamgraph code.
 WIDTH = 700
 HEIGHT = 300
 MARGIN = 20
@@ -9,13 +7,10 @@ weeks = null
 regions = null
 
 @drawStreamGraph = () ->
-  graphDiv = d3.select('div#gf_stream_graph')
-
   haveAllData = () -> (sgData and weeks and regions)
 
   jQuery.getJSON('/sg.json', (sgDataIn) ->
     sgData = sgDataIn
-    graphDiv = d3.select('div#gf_stream_graph')
     console.log('in coffee, got sgData')
     draw() if haveAllData()
   )
@@ -96,16 +91,11 @@ draw = () ->
 
   bodyMouseLeave = () ->
     bmlfn = () ->
-      tooltip.Hide() if (tooltip)
+      tooltip.Hide(d3.event) if (tooltip)
       console.log('h')
 
-  #bodyTouchStart = () ->
-  #  btmfn = (g, i) ->
-  #    setLinePosition(d3.mouse(this), d3.touches(this))
-
   setLinePosition = (mousePosition) ->
-    mousePosText = mousePosition[0] + ", " + mousePosition[1]
-    iDate = dateFromPos(mousePosition)
+    iDate = dateFromPos(mousePosition[0])
     line = document.getElementById('xline')
     if (iDate == -1)
       line.style.display='none'
@@ -122,7 +112,7 @@ draw = () ->
         if (iRegion >= 0)
           ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
         ttHtml = ttHtml + "</table>"
-        ttHtml = ttHtml + mousePosText + "<br>" + d3.event.type + " " + d3.event.clientX + " " + d3.event.clientY
+        ttHtml = "#{ttHtml} #{window.pageXOffset} #{mousePosition} <br> #{d3.event.type} #{d3.event.clientX}"
         tooltip.Show(d3.event, ttHtml )
 
   regionColor = null
@@ -143,13 +133,11 @@ draw = () ->
       setLinePosition(d3.mouse(this))
 
   sgElement = d3.select('div#gf_stream_graph')
-    .on('mouseleave', bodyMouseLeave())
 
   #svg = d3.select('body').append('svg')
   svg = sgElement.append('svg')
     .attr('width', WIDTH)
     .attr('height', HEIGHT)
-    #.on('touchstart', bodyTouchStart())
     .on('mousemove', bodyMouseMove())
 
   d3.select('svg')
@@ -178,7 +166,7 @@ draw = () ->
 
 
   dateFromPos = (mouse) ->
-    date = xScale.invert(mouse[0])
+    date = xScale.invert(mouse)
     format = d3.time.format('%Y-%m-%d')
     dateString = format(date)
     bisect = d3.bisector((d) -> d['date']).left
@@ -191,4 +179,3 @@ draw = () ->
     date = parseDate(weeks[iDate]['date'])
     onscale = xScale(date)
     return iDate
-

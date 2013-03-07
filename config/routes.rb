@@ -12,6 +12,7 @@ Fbror::Application.routes.draw do
   match 'week_dates' => 'gflu::week_dates#index'
   match 'sg' => 'gflu::sg#index'
   match 'ror' => 'ror#index'
+  match 'gfsgvis' => 'gflu::sg#vis'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

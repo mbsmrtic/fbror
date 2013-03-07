@@ -1,11 +1,11 @@
+<%= render "home/header" %>
+
 <h2>Google Flu Trends</h2>
 
-<div id="gf_stream_graph" class=center>
-    <script>
-        drawStreamGraph();
-    </script>
-
-</div>
+<p class='center'>
+<iframe src="gfsgvis" scrolling='no' marginwidth='0' marginheight='0' frameborder='no' height='300' width='700'>
+</iframe>
+</p>
 
 <br>
 Above is my second visualization using D3. It is a Stream Graph visualization of
@@ -20,4 +20,5 @@ also shows that even though it was early in the 2012/2013 flu season, it showed 
 activity than any previous year in this 10 year dataset. <br><br>
 [1] Data Source: Google Flu Trends (<a href="http://www.google.org/flutrends">http://www.google.org/flutrends</a>)
 
+<div id='mousetracker'></div>
 <div id='tooltip'></div>

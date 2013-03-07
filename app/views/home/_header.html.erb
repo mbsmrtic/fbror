@@ -1,0 +1,25 @@
+<head>
+  <title>Flashbit.com</title>
+
+  <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24888686-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+</head>
+<h1>Flashbit<small>'The soul never thinks without a picture.' Aristotle</small></h1>
+<div class=right>
+  <%= mail_to('mbsmrtic@flashbit.com', 'mbsmrtic at flashbit.com', :encode => :hex) %>
+  <%= link_to image_tag("twitter-bird-blue-on-white.png", :size => '36x36'), 'http://www.twitter.com/mbsmrtic', :target => '_blank'  %>
+</div>
+<div>
+  <%= link_to 'Flashbit on Tomcat', 'http://www.flashbit.com' %>  <br>
+  <%= link_to 'Flashbit on Ruby on Rails', ror_path %>    <br>
+  <%=  link_to 'Google Flu Trends', sg_path %> (<%= link_to "fullscreen", gfsgvis_path %>) <br>
+</div>
