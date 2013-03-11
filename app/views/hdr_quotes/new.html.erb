@@ -1,0 +1,21 @@
+<h2> Add a quote: </h2>
+<%= form_for @hdr_quote do |f| %>
+    <% if @hdr_quote.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+          <ul>
+            <% @hdr_quote.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class='field'>
+      <%= f.text_field :quote, :size => '100' %>
+    </div>
+    <div class='actions'>
+      <%= f.submit "Add quote" %>
+    </div>
+<% end %>

@@ -13,7 +13,18 @@
       })();
   </script>
 </head>
-<h1>Flashbit<small>'The soul never thinks without a picture.' Aristotle</small></h1>
+<div class='center'>
+    <h1>Flashbit</h1>
+    <br>
+    <small>
+        <%=
+            quoteNumber = rand(HdrQuote.count)
+            hq = HdrQuote.all[quoteNumber]
+            quoteString = hq.quote
+        %>
+    <!-- 'The soul never thinks without a picture.' Aristotle -->
+    </small>
+</div>
 <div class=right>
   <%= mail_to('mbsmrtic@flashbit.com', 'mbsmrtic at flashbit.com', :encode => :hex) %>
   <%= link_to image_tag("twitter-bird-blue-on-white.png", :size => '36x36'), 'http://www.twitter.com/mbsmrtic', :target => '_blank'  %>

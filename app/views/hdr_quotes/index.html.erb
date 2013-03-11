@@ -1,0 +1,21 @@
+<p id='notice'><%= notice %></p>
+
+<h2>Quotes</h2>
+
+<table>
+    <tr>
+        <td>Add a quote</td>
+        <td><%=  link_to 'New Quote', 'hdr_quotes/new' %></td>
+    </tr>
+    <% @hdr_quotes.each do |quote| %>
+       <tr>
+          <td>  <%=  quote.quote %> </td>
+          <td>  <%= link_to 'Destroy Quote', [quote],
+                      :confirm => 'Are you sure?',
+                      :method => :delete %>
+          </td>
+       </tr>
+    <% end %>
+
+</table>
+

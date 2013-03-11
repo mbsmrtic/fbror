@@ -1,0 +1,12 @@
+<p id='notice'><%= notice %></p>
+
+<p>
+  <b>Quote:</b>
+  <%= @hdr_quote.quote %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Quote', [@hdr_quote],
+                :confirm => 'Are you sure?',
+                :method => :delete %>
+</p>

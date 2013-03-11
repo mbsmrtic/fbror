@@ -11,14 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130219215751) do
+ActiveRecord::Schema.define(:version => 20130310142422) do
+
+  create_table "hdr_quotes", :force => true do |t|
+    t.string "quote"
+  end
 
   create_table "regions", :force => true do |t|
     t.string "name"
   end
 
-  create_table "weeks", :force => true do |t|
-    t.string  "date"
+  create_table "visquotes", :force => true do |t|
+    t.string "quote", :null => false
+  end
+
+  create_table "weeks", :primary_key => "date", :force => true do |t|
     t.integer "United States"
     t.integer "Alabama"
     t.integer "Alaska"

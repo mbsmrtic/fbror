@@ -13,6 +13,10 @@ Fbror::Application.routes.draw do
   match 'sg' => 'gflu::sg#index'
   match 'ror' => 'ror#index'
   match 'gfsgvis' => 'gflu::sg#vis'
+  match 'visquotes' => 'vis_quotes#index'
+  match 'new_quote' => 'vis_quotes#new'
+
+  resources :hdr_quotes
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
