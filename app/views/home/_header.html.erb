@@ -18,7 +18,7 @@
     <br>
     <small>
         <%=
-            if HdrQuote.exists?
+            if HdrQuote.present?
                 quoteNumber = rand(HdrQuote.count)
                 hq = HdrQuote.all[quoteNumber]
                 quoteString = hq.quote
