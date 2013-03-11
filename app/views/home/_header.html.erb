@@ -18,9 +18,12 @@
     <br>
     <small>
         <%=
-            quoteNumber = rand(HdrQuote.count)
-            hq = HdrQuote.all[quoteNumber]
-            quoteString = hq.quote
+            if (HdrQuote.count)
+                quoteNumber = rand(HdrQuote.count)
+                hq = HdrQuote.all[quoteNumber]
+                quoteString = hq.quote
+            else ''
+            end
         %>
     <!-- 'The soul never thinks without a picture.' Aristotle -->
     </small>
