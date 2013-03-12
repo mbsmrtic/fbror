@@ -32,7 +32,7 @@
   <%= link_to image_tag("twitter-bird-blue-on-white.png", :size => '36x36'), 'http://www.twitter.com/mbsmrtic', :target => '_blank'  %>
 </div>
 <div>
-  <%= link_to 'Flashbit on Tomcat', 'http://www.flashbit.com' %>  <br>
+  <%= link_to 'Flashbit on Tomcat', "#{request.protocol}#{request.host}:8080"  %>  <br>
   <%= link_to 'Flashbit on Ruby on Rails', ror_path %>    <br>
   <%=  link_to 'Google Flu Trends', sg_path %> (<%= link_to "fullscreen", gfsgvis_path %>) <br>
 </div>
