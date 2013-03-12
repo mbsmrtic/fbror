@@ -13,10 +13,9 @@
       })();
   </script>
 </head>
-<div class='center'>
-    <h1>Flashbit</h1>
-    <br>
-    <small>
+<h1>
+    Flashbit <br>
+    <span class=small>
         <%=
             if HdrQuote.present? and (HdrQuote.count > 0)
                 quoteNumber = rand(HdrQuote.count)
@@ -26,8 +25,8 @@
             end
         %>
     <!-- 'The soul never thinks without a picture.' Aristotle -->
-    </small>
-</div>
+    </span>
+</h1>
 <div class=right>
   <%= mail_to('mbsmrtic@flashbit.com', 'mbsmrtic at flashbit.com', :encode => :hex) %>
   <%= link_to image_tag("twitter-bird-blue-on-white.png", :size => '36x36'), 'http://www.twitter.com/mbsmrtic', :target => '_blank'  %>

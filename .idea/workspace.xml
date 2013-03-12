@@ -37,14 +37,14 @@
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/obesity.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361896147128" ignored="false" />
     <file path="/obesity.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361896139201" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/ror.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361897510966" ignored="false" />
-    <file path="/home.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363023667235" ignored="false" />
+    <file path="/home.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363057910044" ignored="false" />
     <file path="/home_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362364714945" ignored="false" />
     <file path="/application.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362689483141" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/d3/streamgraph/googlefluregions.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361991291298" ignored="false" />
     <file path="/mousetracker.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362664123842" ignored="false" />
     <file path="/header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362689087174" ignored="false" />
     <file path="/vis.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362690287427" ignored="false" />
-    <file path="/_header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363053091696" ignored="false" />
+    <file path="/_header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363058014845" ignored="false" />
     <file path="/show.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362955586883" ignored="false" />
     <file path="/vis_quotes_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362856021694" ignored="false" />
     <file path="/new.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362967163029" ignored="false" />
@@ -119,19 +119,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+            <state line="6" column="16" selection-start="252" selection-end="252" vertical-scroll-proportion="0.20745921">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="57" selection-start="671" selection-end="671" vertical-scroll-proportion="0.4">
+            <state line="16" column="17" selection-start="560" selection-end="560" vertical-scroll-proportion="-4.730769">
               <folding />
             </state>
           </provider>
@@ -194,8 +194,8 @@
         <option value="$PROJECT_DIR$/app/controllers/hdr_quotes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/hdr_quotes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/hdr_quotes/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
       </list>
     </option>
   </component>
@@ -901,16 +901,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+        <state line="16" column="17" selection-start="560" selection-end="560" vertical-scroll-proportion="-4.730769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="57" selection-start="671" selection-end="671" vertical-scroll-proportion="0.4">
+        <state line="6" column="16" selection-start="252" selection-end="252" vertical-scroll-proportion="0.20745921">
           <folding />
         </state>
       </provider>

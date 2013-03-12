@@ -3,21 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
   font-family: Arial, sans-serif;
-  font-size: 300%;
   font-style: italic;
-  line-height: 1%;
+  line-height: 40%;
+  text-align: center;
+  font-size: 250%;
 }
 h2 {
   text-align: center;
 }
-small {
-  font-size: 90%;
-  font-style: italic;
-  line-height: 1%;
+.small {
+  font-size: 35%;
+  font-weight: normal;
 }
-
+.big {
+  font-size: 125%;
+}
 .right {
-  text-align:  right;
+  float:  right;
 }
 .left {
   float: left;
