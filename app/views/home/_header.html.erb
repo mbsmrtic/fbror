@@ -40,14 +40,17 @@
 </div>
 <div>
   <% url = "#{request.protocol}#{request.host}:8080" %>
-  <%= link_to 'Flashbit on Tomcat', url %>  <br>
-  <%= link_to 'D3 Data Vis JavaScript Library', url + '/d3.html' %>   <br>
-  <%= link_to "Crohn's Disease Genetic Differences", url + '/crohns.html' %>   <br>
-  <%= link_to "Quality of Life Index", url + '/qol.html' %>                    <br>
-  <%= link_to "Red Meat", url + '/redmeat.html' %>                   <br>
-  <%= link_to "Diet and Disease w the China Study", url + '/chinastudy.html' %>   <br>
-  <%= link_to "Types of Information Visualization", url + '/path.html' %>      <br>
-  <%= link_to "Obesity in the United States", url + '/obesity.html' %>        <br>
-  <%= link_to 'Flashbit on Ruby on Rails', ror_path %>    <br>
-  <%=  link_to 'Google Flu Trends', sg_path %> (<%= link_to "fullscreen", gfsgvis_path %>) <br>
+  Explore
+  <ul>
+    <li><%= link_to 'Flashbit on Tomcat', url %>  </li>
+    <li><%= link_to 'D3 Data Vis JavaScript Library', url + '/d3.html' %> </li>
+    <li><%= link_to "Crohn's Disease Genetic Differences", url + '/crohns.html' %>   </li>
+    <li><%= link_to "Quality of Life Index", url + '/qol.html' %>                    </li>
+    <li> <%= link_to "Red Meat", url + '/redmeat.html' %>                   </li>
+    <li><%= link_to "Diet and Disease w the China Study", url + '/chinastudy.html' %>   </li>
+    <li><%= link_to "Types of Information Visualization", url + '/path.html' %>      </li>
+    <li><%= link_to "Obesity in the United States", url + '/obesity.html' %>        </li>
+    <li><%= link_to 'Flashbit on Ruby on Rails', ror_path %>    </li>
+    <li><%=  link_to 'Google Flu Trends', sg_path %> (<%= link_to "fullscreen", gfsgvis_path %>) </li>
+  </ul>
 </div>

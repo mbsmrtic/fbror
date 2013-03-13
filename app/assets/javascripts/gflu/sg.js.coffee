@@ -1,7 +1,8 @@
 # The Google Flu Trends streamgraph code.
-WIDTH = 700
-HEIGHT = 300
+# WIDTH = 700
 MARGIN = 20
+WIDTH = window.innerWidth - MARGIN
+HEIGHT = window.innerHeight
 sgData = null
 weeks = null
 regions = null
