@@ -6,7 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172a782b-b933-49b2-8d28-3f724d2916e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_header.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,7 +40,7 @@
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/obesity.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361896147128" ignored="false" />
     <file path="/obesity.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361896139201" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/ror.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361897510966" ignored="false" />
-    <file path="/home.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363181039608" ignored="false" />
+    <file path="/home.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363182295071" ignored="false" />
     <file path="/home_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362364714945" ignored="false" />
     <file path="/application.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362689483141" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/d3/streamgraph/googlefluregions.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361991291298" ignored="false" />
@@ -79,10 +78,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="555" selection-end="555" vertical-scroll-proportion="0.21390374">
+            <state line="16" column="12" selection-start="555" selection-end="555" vertical-scroll-proportion="-3.0769231">
               <folding />
             </state>
           </provider>
@@ -106,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+            <state line="10" column="20" selection-start="335" selection-end="335" vertical-scroll-proportion="0.4116223">
               <folding />
             </state>
           </provider>
@@ -1018,16 +1017,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+        <state line="16" column="12" selection-start="555" selection-end="555" vertical-scroll-proportion="-3.0769231">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="555" selection-end="555" vertical-scroll-proportion="0.21390374">
+        <state line="10" column="20" selection-start="335" selection-end="335" vertical-scroll-proportion="0.4116223">
           <folding />
         </state>
       </provider>
