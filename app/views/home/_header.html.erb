@@ -17,14 +17,20 @@
     Flashbit  <br>
     <span class=small>
         <%=
-            if HdrQuote.present? and (HdrQuote.count > 0)
-                quoteNumber = rand(HdrQuote.count)
-                hq = HdrQuote.all[quoteNumber]
-                quoteString = hq.quote
-            else ''
-            end
+            quoteString =
+                if HdrQuote.present? and (HdrQuote.count > 0)
+                    quoteNumber = rand(HdrQuote.count)
+                    hq = HdrQuote.all[quoteNumber]
+                    hq.quote
+                else ''
+                end
         %>
-    <!-- 'The soul never thinks without a picture.' Aristotle -->
+        <%=
+            tweetURL = 'https://www.twitter.com/share?text=' + quoteString + ' via %40mbsmrtic flashbit.com'
+            tweetLink = link_to image_tag("twitter-bird-blue-on-white.png", :size => '36x36'),
+                  tweetURL, :title => 'Tweet it!', :target => '_blank'
+        %>
+        <!-- 'The soul never thinks without a picture.' Aristotle -->
     </span>
 </h1>
 <div class=right>

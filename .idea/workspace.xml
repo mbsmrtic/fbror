@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="172a782b-b933-49b2-8d28-3f724d2916e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fbror.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +46,7 @@
     <file path="/mousetracker.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362664123842" ignored="false" />
     <file path="/header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362689087174" ignored="false" />
     <file path="/vis.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362690287427" ignored="false" />
-    <file path="/_header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363183136281" ignored="false" />
+    <file path="/_header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363186365353" ignored="false" />
     <file path="/show.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362955586883" ignored="false" />
     <file path="/vis_quotes_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362856021694" ignored="false" />
     <file path="/new.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362967163029" ignored="false" />
@@ -81,7 +80,7 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.5167959">
+            <state line="28" column="107" selection-start="994" selection-end="994" vertical-scroll-proportion="0.34108528">
               <folding />
             </state>
           </provider>
@@ -1026,7 +1025,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.5167959">
+        <state line="28" column="107" selection-start="994" selection-end="994" vertical-scroll-proportion="0.34108528">
           <folding />
         </state>
       </provider>
