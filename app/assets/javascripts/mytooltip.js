@@ -13,7 +13,7 @@ function MyToolTip(id) {
   
   	function Init(id){
        d3.select('div#tooltip')
-           .style('background-color', 'lightgray')
+           .style('background-color', 'white')
            .style('width', '150px')
            .style('height', '70px')
            .style('text-align', 'left')
@@ -41,7 +41,6 @@ function MyToolTip(id) {
 	   isInit++;
        return this
   	}
-  	
 	this.Show = function(e,strHTML) {
 		if(isInit<0) return;
 	    
@@ -69,10 +68,10 @@ function MyToolTip(id) {
 	    else
 	    	newPosx = curPosx-divWidth;
 	
-	    if((curPosy - divHeight) > 0)
+	    if((curPosy - divHeight - 10) > 0)
 	    	newPosy= curPosy + 10;
 	    else
-	    	newPosy = curPosy + divHeight + 10;
+	    	newPosy = curPosy + divHeight + 20;
 	
 		if(window.pageYOffset){
 	   		newPosy= newPosy+ window.pageYOffset;
