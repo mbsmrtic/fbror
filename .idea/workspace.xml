@@ -80,7 +80,7 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="107" selection-start="994" selection-end="994" vertical-scroll-proportion="0.34108528">
+            <state line="28" column="94" selection-start="981" selection-end="981" vertical-scroll-proportion="0.34108528">
               <folding />
             </state>
           </provider>
@@ -789,7 +789,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1025,7 +1025,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="107" selection-start="994" selection-end="994" vertical-scroll-proportion="0.34108528">
+        <state line="28" column="94" selection-start="981" selection-end="981" vertical-scroll-proportion="0.34108528">
           <folding />
         </state>
       </provider>
