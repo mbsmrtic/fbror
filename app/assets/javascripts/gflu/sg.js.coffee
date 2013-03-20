@@ -1,11 +1,17 @@
 # The Google Flu Trends streamgraph code.
 # WIDTH = 700
-MARGIN = 20
+MARGIN = 40
 WIDTH = window.innerWidth - MARGIN
-HEIGHT = window.innerHeight
+HEIGHT = window.innerHeight - MARGIN
 sgData = null
 weeks = null
 regions = null
+regionPaths = null
+graphOffsetType = 'zero'
+duration = 750
+stack = null
+area = null
+streamgraph = null
 
 @drawStreamGraph = () ->
   haveAllData = () -> (sgData and weeks and regions)
@@ -34,6 +40,16 @@ draw = () ->
     tooltip = MyToolTip('tooltip')
   iRegion = -1
 
+  bodyMouseMove = () ->
+    bmmfn = (g, i) ->
+      setLinePosition(d3.mouse(this))
+
+  sgElement = d3.select('div#gf_stream_graph')
+  svg = sgElement.append('svg')
+      .attr('width', WIDTH)
+      .attr('height', HEIGHT)
+      .on('mousemove', bodyMouseMove())
+
   #loop through weeks - for each week
   #    loop through all the regions adding up the values
   #totUS = for regionName in regions
@@ -59,11 +75,11 @@ draw = () ->
     .orient('bottom')
     .tickSize(-HEIGHT)
 
-
   #send sgData into the stack/wiggle calculation - it creates
   #  the additional data needed for the layout of the graph
   #  this changes the contents of sgData
-  d3.layout.stack().offset('wiggle')(sgData)
+  stack = d3.layout.stack()
+    .offset(graphOffsetType)(sgData)
 
   #add the yScale
   # max y value
@@ -85,10 +101,6 @@ draw = () ->
     )
     .y0((d) -> yScale(d.y0))
     .y1((d) -> yScale(d.y0 + d.y))
-
-  bodyMouseMove = () ->
-    bmmfn = (g, i) ->
-      setLinePosition(d3.mouse(this))
 
   bodyMouseLeave = () ->
     bmlfn = () ->
@@ -120,25 +132,20 @@ draw = () ->
   mouseover = () ->
     (g, i) ->
       iRegion = i
-      regionPath = streamgraph[0][i]
-      regionColor = regionPath.style.fill
-      regionPath.style.fill = 'black'
+      regionPath = regionPaths[0][i]
+      patharea = regionPath.children[0]
+      regionColor = patharea.style.fill
+      patharea.style.fill = 'black'
       setLinePosition(d3.mouse(this))
 
   mouseout = () ->
     (g, i) ->
-      regionPath = streamgraph[0][i]
-      regionPath.style.fill = regionColor
+      regionPath = regionPaths[0][i]
+      patharea = regionPath.children[0]
+      patharea.style.fill = regionColor
       iRegion = -1
       setLinePosition(d3.mouse(this))
 
-  sgElement = d3.select('div#gf_stream_graph')
-
-  #svg = d3.select('body').append('svg')
-  svg = sgElement.append('svg')
-    .attr('width', WIDTH)
-    .attr('height', HEIGHT)
-    .on('mousemove', bodyMouseMove())
 
   d3.select('svg')
     .append('line')
@@ -150,11 +157,20 @@ draw = () ->
     .style('stroke', 'darkgray')
     .style('stroke-width', 2)
 
-  streamgraph = svg.selectAll('path')
+  streamgraph = svg.selectAll('.region')
     .data(sgData)
-    .enter().append('path')
-    .attr('d', area)
+    .enter()
+
+  regionPaths = streamgraph
+    .append('g')
+    .attr('class', 'region')
+
+  regionPaths.append('path')
+    .attr('class', 'area')
     .style('fill', () -> color(Math.random()))
+    .attr('d', area)
+
+  regionPaths
     .on('mouseover', mouseover())
     .on('mouseout', mouseout())
 
@@ -164,18 +180,44 @@ draw = () ->
     .attr('transform', 'translate(0,' + (HEIGHT - MARGIN) + ')')
     .call(xAxis)
 
-
   dateFromPos = (mouse) ->
     date = xScale.invert(mouse)
     format = d3.time.format('%Y-%m-%d')
     dateString = format(date)
     bisect = d3.bisector((d) -> d['date']).left
     iDate = bisect(weeks, dateString)
-    #iDate = weeks.indexOf(dateString)
-    #if (iDate == -1)
-    #  iDate = d3.bisectLeft(weeks, dateString)
     if (iDate >= weeks.length)
       iDate = weeks.length - 1
-    date = parseDate(weeks[iDate]['date'])
-    onscale = xScale(date)
     return iDate
+
+  d3.selectAll('.switch')
+    .on('click',
+      (d) ->
+        id = d3.select(this).attr('id')
+        if id == 'stream'
+          graphOffsetType = 'wiggle'
+        if id == 'stack'
+          graphOffsetType = 'zero'
+        # get the data again
+        jQuery.getJSON('/sg.json', (sgDataIn) ->
+          sgData = sgDataIn
+
+          stack = d3.layout.stack()
+            .offset(graphOffsetType)(sgData)
+
+          svg.selectAll('.region')
+            .data(sgData)
+            .enter()
+          t = svg.selectAll('.region')
+            .transition()
+            .delay(5)
+            .duration(1500)
+          t.select('.area')
+            .attr('d', (d)->area(d))
+        )
+
+    )
+
+
+
+
