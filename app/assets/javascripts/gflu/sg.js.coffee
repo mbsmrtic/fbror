@@ -18,30 +18,26 @@ streamgraph = null
 
   jQuery.getJSON('/sg.json', (sgDataIn) ->
     sgData = sgDataIn
-    console.log('in coffee, got sgData')
     draw() if haveAllData()
   )
 
   jQuery.getJSON('/week_dates.json', (weeksIn) ->
     weeks = weeksIn
-    console.log('in coffee, got week_dates')
     draw() if haveAllData()
   )
 
   jQuery.getJSON('/regions.json', (regionsIn) ->
     regions = regionsIn
-    console.log('in coffee, got regions')
     draw() if haveAllData()
   )
 
 draw = () ->
-  console.log('in coffee in draw')
   if (! tooltip)
     tooltip = MyToolTip('tooltip')
   iRegion = -1
 
   bodyMouseMove = () ->
-    bmmfn = (g, i) ->
+    () ->
       setLinePosition(d3.mouse(this))
 
   sgElement = d3.select('div#gf_stream_graph')
@@ -57,7 +53,7 @@ draw = () ->
   weeks.forEach((week,iWeek) ->
     #loop through the regions
     totForWeek = 0
-    sgData.forEach((regionData, iRegion) ->
+    sgData.forEach((regionData) ->
       totForWeek += regionData[iWeek].y
     )
     week.US = totForWeek
@@ -102,11 +98,6 @@ draw = () ->
     .y0((d) -> yScale(d.y0))
     .y1((d) -> yScale(d.y0 + d.y))
 
-  bodyMouseLeave = () ->
-    bmlfn = () ->
-      tooltip.Hide(d3.event) if (tooltip)
-      console.log('h')
-
   setLinePosition = (mousePosition) ->
     iDate = dateFromPos(mousePosition[0])
     line = document.getElementById('xline')
@@ -132,17 +123,13 @@ draw = () ->
   mouseover = () ->
     (g, i) ->
       iRegion = i
-      regionPath = regionPaths[0][i]
-      patharea = regionPath.children[0]
-      regionColor = patharea.style.fill
-      patharea.style.fill = 'black'
+      regionColor = this.style.fill
+      this.style.fill = 'black'
       setLinePosition(d3.mouse(this))
 
   mouseout = () ->
     (g, i) ->
-      regionPath = regionPaths[0][i]
-      patharea = regionPath.children[0]
-      patharea.style.fill = regionColor
+      this.style.fill = regionColor
       iRegion = -1
       setLinePosition(d3.mouse(this))
 
@@ -165,12 +152,10 @@ draw = () ->
     .append('g')
     .attr('class', 'region')
 
-  regionPaths.append('path')
+  paths = regionPaths.append('path')
     .attr('class', 'area')
     .style('fill', () -> color(Math.random()))
     .attr('d', area)
-
-  regionPaths
     .on('mouseover', mouseover())
     .on('mouseout', mouseout())
 
@@ -213,14 +198,10 @@ draw = () ->
     )
 
   streamButton = d3.select('#stream')
-  streamButton.on('click', (d) ->
-    changeVisType('wiggle', streamButton, stackButton)
-  )
+    .on('click', () -> changeVisType('wiggle', streamButton, stackButton))
   stackButton = d3.select('#stack')
     .attr('disabled', true)
-  stackButton.on('click', (d) ->
-    changeVisType('zero', stackButton, streamButton)
-  )
+    .on('click', () -> changeVisType('zero', stackButton, streamButton))
 
 
 

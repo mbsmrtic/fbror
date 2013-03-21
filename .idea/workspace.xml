@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="106" />
-    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="126" />
+    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="117" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172a782b-b933-49b2-8d28-3f724d2916e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb" afterPath="$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fbror.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,10 +17,10 @@
     <file path="/regions_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361312620482" ignored="false" />
     <file path="$PROJECT_DIR$/../gflue/app/views/week_dates/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361313302364" ignored="false" />
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
-    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363879948210" ignored="false" />
+    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363887582061" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
     <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363133627736" ignored="false" />
-    <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363880066088" ignored="false" />
+    <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363887991609" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/web.css" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361893634062" ignored="false" />
     <file path="/web.css" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361893503902" ignored="false" />
     <file path="/flashbitvis.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362006486275" ignored="false" />
@@ -84,7 +81,7 @@
       <file leaf-file-name="sg.js.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="26" selection-start="5857" selection-end="5857" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1003" selection-end="1003" vertical-scroll-proportion="-14.16">
               <folding />
             </state>
           </provider>
@@ -102,7 +99,7 @@
       <file leaf-file-name="sg.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.22006473">
+            <state line="9" column="14" selection-start="272" selection-end="272" vertical-scroll-proportion="0.24757281">
               <folding />
             </state>
           </provider>
@@ -959,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="26" selection-start="5857" selection-end="5857" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="45" selection-start="72" selection-end="72" vertical-scroll-proportion="-0.65384614">
@@ -973,9 +963,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1003" selection-end="1003" vertical-scroll-proportion="-14.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.22006473">
+        <state line="9" column="14" selection-start="272" selection-end="272" vertical-scroll-proportion="0.24757281">
           <folding />
         </state>
       </provider>
