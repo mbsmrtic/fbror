@@ -190,33 +190,37 @@ draw = () ->
       iDate = weeks.length - 1
     return iDate
 
-  d3.selectAll('.switch')
-    .on('click',
-      (d) ->
-        id = d3.select(this).attr('id')
-        if id == 'stream'
-          graphOffsetType = 'wiggle'
-        if id == 'stack'
-          graphOffsetType = 'zero'
-        # get the data again
-        jQuery.getJSON('/sg.json', (sgDataIn) ->
-          sgData = sgDataIn
-
-          stack = d3.layout.stack()
-            .offset(graphOffsetType)(sgData)
-
-          svg.selectAll('.region')
-            .data(sgData)
-            .enter()
-          t = svg.selectAll('.region')
-            .transition()
-            .delay(5)
-            .duration(1500)
-          t.select('.area')
-            .attr('d', (d)->area(d))
-        )
-
+  changeVisType = (offset, btnThis, btnOther) ->
+    graphOffsetType = offset
+    btnText = btnThis.text()
+    btnThis.text('   loading...')
+    btnThis.attr('disabled', true)   #disable this button
+    jQuery.getJSON('/sg.json', (sgDataIn) ->
+      sgData = sgDataIn
+      stack = d3.layout.stack()
+        .offset(graphOffsetType)(sgData)
+      svg.selectAll('.region')
+        .data(sgData)
+        .enter()
+      t = svg.selectAll('.region')
+        .transition()
+        .delay(5)
+        .duration(1500)
+      t.select('.area')
+        .attr('d', (d)->area(d))
+      btnThis.text(btnText)
+      btnOther.attr('disabled', null)  #enable the other button
     )
+
+  streamButton = d3.select('#stream')
+  streamButton.on('click', (d) ->
+    changeVisType('wiggle', streamButton, stackButton)
+  )
+  stackButton = d3.select('#stack')
+    .attr('disabled', true)
+  stackButton.on('click', (d) ->
+    changeVisType('zero', stackButton, streamButton)
+  )
 
 
 

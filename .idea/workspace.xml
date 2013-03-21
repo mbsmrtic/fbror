@@ -6,9 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172a782b-b933-49b2-8d28-3f724d2916e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ror/index.html.erb" afterPath="$PROJECT_DIR$/app/views/ror/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb" afterPath="$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fbror.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,10 +20,10 @@
     <file path="/regions_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361312620482" ignored="false" />
     <file path="$PROJECT_DIR$/../gflue/app/views/week_dates/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361313302364" ignored="false" />
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
-    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363799116542" ignored="false" />
+    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363879948210" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
     <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363133627736" ignored="false" />
-    <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362487967449" ignored="false" />
+    <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363880066088" ignored="false" />
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/web.css" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361893634062" ignored="false" />
     <file path="/web.css" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361893503902" ignored="false" />
     <file path="/flashbitvis.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362006486275" ignored="false" />
@@ -47,7 +48,7 @@
     <file path="C:/glassfishv3/glassfish/domains/domain1/docroot/d3/streamgraph/googlefluregions.html" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361991291298" ignored="false" />
     <file path="/mousetracker.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362664123842" ignored="false" />
     <file path="/header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362689087174" ignored="false" />
-    <file path="/vis.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363226336350" ignored="false" />
+    <file path="/vis.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363875409861" ignored="false" />
     <file path="/_header.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363191877776" ignored="false" />
     <file path="/show.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362955586883" ignored="false" />
     <file path="/vis_quotes_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1362856021694" ignored="false" />
@@ -80,46 +81,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sg.js.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sg.js.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-0.605178">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d3.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/d3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1906" column="11" selection-start="61863" selection-end="61863" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/ror/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="71" selection-start="2859" selection-end="2859" vertical-scroll-proportion="-16.23077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="2" selection-start="1272" selection-end="1383" vertical-scroll-proportion="-13.192307">
+            <state line="219" column="26" selection-start="5857" selection-end="5857" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,16 +93,16 @@
       <file leaf-file-name="vis.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="-2.6153846">
+            <state line="1" column="45" selection-start="72" selection-end="72" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+      <file leaf-file-name="sg.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="8" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.22006473">
               <folding />
             </state>
           </provider>
@@ -167,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/visquote.rb" />
         <option value="$PROJECT_DIR$/app/views/vis_quotes/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/vis_quotes_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/hdr_quote.rb" />
@@ -180,9 +144,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_header.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb" />
         <option value="$PROJECT_DIR$/app/views/ror/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss" />
       </list>
     </option>
   </component>
@@ -318,6 +283,54 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gflu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gflu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -334,6 +347,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gflu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,6 +425,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gflu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -805,7 +866,7 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="37" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -825,7 +886,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/ror.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
@@ -833,11 +896,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.23486683" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mytooltip.js">
@@ -866,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -887,20 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ror/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="71" selection-start="2859" selection-end="2859" vertical-scroll-proportion="-16.23077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="-2.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/d3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1906" column="11" selection-start="61863" selection-end="61863" vertical-scroll-proportion="0.0">
@@ -908,9 +945,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ror/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="71" selection-start="2859" selection-end="2859" vertical-scroll-proportion="-26.153847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-0.605178">
+        <state line="219" column="26" selection-start="5857" selection-end="5857" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="45" selection-start="72" selection-end="72" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.22006473">
           <folding />
         </state>
       </provider>
