@@ -13,6 +13,7 @@ Fbror::Application.routes.draw do
   match 'sg' => 'gflu::sg#index'
   match 'ror' => 'ror#index'
   match 'gfsgvis' => 'gflu::sg#vis'
+  match 'transitions' => 'home#transitions'
   resources :hdr_quotes
 
   # The priority is based upon order of creation:

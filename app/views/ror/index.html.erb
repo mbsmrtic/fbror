@@ -3,10 +3,10 @@
 <body>
 <h2>Google Flu Trends</h2>
 <p class='center'>
-<iframe src="gfsgvis" scrolling='no' marginwidth='0' marginheight='0' frameborder='no' height='300' width='700'>
-</iframe>
+    <iframe src="gfsgvis" scrolling='no' marginwidth='0' marginheight='0' frameborder='no' height='400' width='800'>
+    </iframe>
 </p>
-<br>
+
 <h3>Flashbit on Ruby on Rails</h3>
 Welcome to Flashbit on <a href='http://en.wikipedia.org/wiki/Ruby_on_rails'>Ruby on Rails</a>!
 This small site is made up of about 90 files but it's now much more scalable and organized and flexible than
@@ -16,6 +16,18 @@ the styling and data and layout code separate from each other. Everything has a 
 The logic of the layout looks clean and clear since it isn't mixed in with styling and data. This is known
 as <a href='http://en.wikipedia.org/wiki/Separation_of_concerns'>separation of concerns</a> which makes the
 code for the site much easier to understand and manipulate.  <br>
+<h3>D3 Transitions</h3>
+The latest addition to this visualization are the Streamgraph, Stacked Area and Line Chart buttons. There are a few great
+things about this addition. One is that the buttons allow you to see the data 3 different ways, which helps
+in understanding it. The other is that
+this is my first adventure with D3 transitions. A transition is a smooth animation from one visualization to another.
+A stacked area chart is a great, simple, intuitive visualization. The problem, though is that if we want to differentiate
+the regions to show which regions had the higher numbers, the regions at the top are more difficult to see than the
+ones at the bottom.  They get stretched.  A streamgraph is a good way to help alleviate this problem. It's a more
+advance visualization, though. It's not immediately obvious what it shows.  A transition from a simple to a complex
+view makes the complex visualization usable.  This is extremely powerful because it removes limitations.  We don't
+have to stay with only simple visualizations, we can now build up to complex, nuanced visualizations. This gives us
+the power to see more deeply into complex data.
 <h3>CoffeeScript</h3>
 Since I'm using the <a href='http://d3js.org/'>D3</a> JavaScript data visualization library for my data visualizations,
 there is some JavaScript in the site in addition to the Ruby. The version of Ruby on Rails that I'm using (3.2)
@@ -37,9 +49,9 @@ But before
 I do any of those things, I want to add some new time visualizations. I'd like to add a time line that allows
 zooming. I have a flu text data set that contains some interesting history of flu in the United States. I'd like to
 create a time line visualization of that. <br><br>
-Do you have a data set that you'd like analyzed and/or visualized?
-<%= mail_to('mbsmrtic@flashbit.com', 'Let me know.', :title =>'mail_to:mbsmrtic@flashbit.com', :encode => :hex) %>
-
+Do you have a data set that you'd like analyzed, processed and/or visualized?
+<%= mail_to('mbsmrtic@flashbit.com', 'Let me know.', :title =>'mbsmrtic at flashbit.com', :encode => :hex) %>
+  <br><br>
 </body>
 
 <div id='mousetracker'></div>

@@ -9,9 +9,9 @@ regions = null
 regionPaths = null
 graphOffsetType = 'zero'
 duration = 750
-stack = null
 area = null
 streamgraph = null
+colors = null
 
 @drawStreamGraph = () ->
   haveAllData = () -> (sgData and weeks and regions)
@@ -74,7 +74,7 @@ draw = () ->
   #send sgData into the stack/wiggle calculation - it creates
   #  the additional data needed for the layout of the graph
   #  this changes the contents of sgData
-  stack = d3.layout.stack()
+  d3.layout.stack()
     .offset(graphOffsetType)(sgData)
 
   #add the yScale
@@ -85,19 +85,16 @@ draw = () ->
     .range([HEIGHT - MARGIN, 0])
 
   #define which color range we'll use
-  color = d3.scale.category20b()
+  colors = d3.scale.category20b()
 
   #draw the streamgraph visualization
   area = d3.svg.area()
     .interpolate('cardinal')
-    .x((d) ->
-      date = parseDate(weeks[d.x]['date'])
-      retval = xScale(date)
-      return retval
-    )
+    .x((d) -> xScale(parseDate(weeks[d.x]['date'])))
     .y0((d) -> yScale(d.y0))
     .y1((d) -> yScale(d.y0 + d.y))
 
+  #mouse tracker vertical line
   setLinePosition = (mousePosition) ->
     iDate = dateFromPos(mousePosition[0])
     line = document.getElementById('xline')
@@ -118,22 +115,6 @@ draw = () ->
         ttHtml = ttHtml + "</table>"
         tooltip.Show(d3.event, ttHtml )
 
-  regionColor = null
-
-  mouseover = () ->
-    (g, i) ->
-      iRegion = i
-      regionColor = this.style.fill
-      this.style.fill = 'black'
-      setLinePosition(d3.mouse(this))
-
-  mouseout = () ->
-    (g, i) ->
-      this.style.fill = regionColor
-      iRegion = -1
-      setLinePosition(d3.mouse(this))
-
-
   d3.select('svg')
     .append('line')
     .attr('id', 'xline')
@@ -143,6 +124,21 @@ draw = () ->
     .attr('y2', HEIGHT - MARGIN)
     .style('stroke', 'darkgray')
     .style('stroke-width', 2)
+
+  regionColor = null
+  mouseover = () ->
+    (g, i) ->
+      iRegion = i
+      regionColor = this.style.fill
+      this.style.fill = 'black'
+      this.style.stroke = 'black'
+      setLinePosition(d3.mouse(this))
+  mouseout = () ->
+    (g, i) ->
+      this.style.fill = regionColor
+      this.style.stroke = regionColor
+      iRegion = -1
+      setLinePosition(d3.mouse(this))
 
   streamgraph = svg.selectAll('.region')
     .data(sgData)
@@ -154,7 +150,7 @@ draw = () ->
 
   paths = regionPaths.append('path')
     .attr('class', 'area')
-    .style('fill', () -> color(Math.random()))
+    .style('fill', () -> colors(Math.random()))
     .attr('d', area)
     .on('mouseover', mouseover())
     .on('mouseout', mouseout())
@@ -175,34 +171,86 @@ draw = () ->
       iDate = weeks.length - 1
     return iDate
 
-  changeVisType = (offset, btnThis, btnOther) ->
+  changeVisType = (offset, btnThis) ->
     graphOffsetType = offset
     btnText = btnThis.text()
     btnThis.text('   loading...')
-    btnThis.attr('disabled', true)   #disable this button
     jQuery.getJSON('/sg.json', (sgDataIn) ->
       sgData = sgDataIn
-      stack = d3.layout.stack()
-        .offset(graphOffsetType)(sgData)
+
+      #change sgData to the graphOffsetType
+      if graphOffsetType is 'line'
+        sgData.forEach((region) ->
+          region.forEach((week) ->
+             week.y0 = 0
+          )
+        )
+      else
+        d3.layout.stack()
+          .offset(graphOffsetType)(sgData)
+      maxHeight = d3.max(sgData, (layer) -> d3.max(layer, (pt) -> pt.y0 + pt.y))
+      yScale = d3.scale.linear()
+        .domain([0, maxHeight])
+        .range([HEIGHT - MARGIN, 0])
+
       svg.selectAll('.region')
         .data(sgData)
         .enter()
+      a = svg.selectAll('.region')
+        .select('.area')
+      if graphOffsetType is 'line'
+        a.style('stroke', () -> this.style.fill)
+          .style('stroke-width', 2)
+          .style('fill', 'none')
+          .on('mouseover', (g,i) ->
+            iRegion = i
+            j = 0
+            for regionPath in regionPaths[0]
+              if j != iRegion
+                regionPath.style.strokeOpacity = .2
+              j += 1
+            )
+          .on('mouseout', (g,i) ->
+            for regionPath in regionPaths[0]
+              regionPath.style.strokeOpacity = 1
+            iRegion = -1
+          )
+      else
+        a.style('fill', () ->
+            if this.style.fill is 'none'
+              this.style.stroke
+            else
+              this.style.fill
+          )
+          .style('stroke', () -> this.style.fill)
+          .on('mouseover', mouseover())
+          .on('mouseout', mouseout())
       t = svg.selectAll('.region')
         .transition()
-        .delay(5)
-        .duration(1500)
+        .delay(0)
+        .duration(3500)
       t.select('.area')
         .attr('d', (d)->area(d))
       btnThis.text(btnText)
-      btnOther.attr('disabled', null)  #enable the other button
     )
 
   streamButton = d3.select('#stream')
-    .on('click', () -> changeVisType('wiggle', streamButton, stackButton))
+    .on('click', () ->
+        streamButton.attr('disabled', true)
+        stackButton.attr('disabled', null)
+        lineButton.attr('disabled', null)
+        changeVisType('wiggle', streamButton)
+    )
   stackButton = d3.select('#stack')
     .attr('disabled', true)
-    .on('click', () -> changeVisType('zero', stackButton, streamButton))
-
-
-
-
+    .on('click', () ->
+        streamButton.attr('disabled', null)
+        stackButton.attr('disabled', true)
+        lineButton.attr('disabled', null)
+        changeVisType('zero', stackButton))
+  lineButton = d3.select('#linechart')
+    .on('click', () ->
+      streamButton.attr('disabled', null)
+      stackButton.attr('disabled', null)
+      lineButton.attr('disabled', true)
+      changeVisType('line', lineButton))

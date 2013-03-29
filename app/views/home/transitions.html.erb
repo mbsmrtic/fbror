@@ -1,0 +1,53 @@
+<%= render "home/header" %>
+
+<body>
+<h2>D3 Transitions and Streamgraph</h2>
+<p class='center'>
+<iframe src="gfsgvis" scrolling='no' marginwidth='0' marginheight='0' frameborder='no' height='400' width='800'>
+</iframe>
+</p>
+
+<% url = "#{request.protocol}#{request.host}:8080" %>
+
+<h3>D3's transition is a powerful tool for understanding complex data</h3>
+The latest addition to the above visualization of <a href="http://www.google.org/flutrends/">Google Flu Trends</a>
+data [1] is a <a href='http://en.wikipedia.org/wiki/Area_chart'>stacked area chart</a> along with buttons to transition
+between that and the <a href='http://en.wikipedia.org/wiki/Streamgraph'>streamgraph</a> visualization.
+The stacked area chart is a simple, intuitive way to give an overview of the data. The streamgraph
+gives a better view of each of the regions but isn't as easy to understand. The smooth transition is a powerfully clear
+visual explanation of the streamgraph visualization.
+
+The transition makes it clearer that the data hasn't changed, just
+where it's represented in the visualization, making the streamgraph ea
+Streamgraph
+is a good visualization for this data set because it shows both the overview of the trends in the entire US and the individual
+regions of the US. A stacked area chart is a simpler visualization, it's more intuitive and easier to see the trends
+of the entire US.  It's harder, however to see the individual regions. Once the user has gotten the overview,
+the transition to streamgraph provides a way to zoom into the regions. <br><br>
+Interactive exploratory data visualization is an extremely powerful way to understand complex data, and complex
+visualizations can give us more and deeper insights than simple visualizations.
+<a href="http://en.wikipedia.org/wiki/Don_Norman">Don Norman</a> in <i>Living with Complexity</i> talks about the design of
+a complex system, the cockpit of an airplane and calls it appropriate complexity. It's understandable and the
+pilots are given understanding in the form of training. On the web, we don't have the luxury of providing training.
+We'd like our data to be accessible, we need to provide a way for users to understand the data. I've
+<%= link_to 'previously', "#{request.protocol}#{request.host}:8080/path.html"%> used
+a progression from simple to complex visualizations to provide a path to understanding. Transitions like the one shown
+above are more powerful and provide the user with a closer, more intuitive connection with the data
+by visually showing the path of the data from one visualization to the next. "In a data exploration interface,
+it is important that the mapping between the data and its visual representation be fluid and dynamic. Certain
+kinds of interactive techniques promote an experience of being in direct contact with the data." [2]  This is a
+simple example, but the technique can be used to provide deeper understanding of complex data.
+<br><br>
+
+[1] Data Source: Google Flu Trends (<a href="http://www.google.org/flutrends">http://www.google.org/flutrends</a>)<br>
+[2] Colin Ware, Information Visualization: Perception for Design, Second Edition, Morgan Kaufmann Publishers, 2004.<br>
+
+
+<br><br>
+Do you have a data set that you'd like analyzed, processed and/or visualized?
+<%= mail_to('mbsmrtic@flashbit.com', 'Let me know.', :title =>'mbsmrtic at flashbit.com', :encode => :hex) %>
+<br> <br>
+</body>
+
+<div id='mousetracker'></div>
+<div id='tooltip'></div>
