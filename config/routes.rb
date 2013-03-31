@@ -14,6 +14,7 @@ Fbror::Application.routes.draw do
   match 'ror' => 'ror#index'
   match 'gfsgvis' => 'gflu::sg#vis'
   match 'transitions' => 'home#transitions'
+  match 'diabetes' => 'diabetes#index'
   resources :hdr_quotes
 
   # The priority is based upon order of creation:
