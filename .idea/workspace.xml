@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="90" />
+    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" line="89" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172a782b-b933-49b2-8d28-3f724d2916e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ror/index.html.erb" afterPath="$PROJECT_DIR$/app/views/ror/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fbror.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361310324583" ignored="false" />
     <file path="/routes.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363999424783" ignored="false" />
     <file path="/Dummy.txt" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1364513773903" ignored="false" />
-    <file path="/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1364583188407" ignored="false" />
+    <file path="/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1364591192622" ignored="false" />
     <file path="/regions_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361312620482" ignored="false" />
     <file path="$PROJECT_DIR$/../gflue/app/views/week_dates/index.html.erb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361313302364" ignored="false" />
     <file path="/week_dates_controller.rb" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361315109850" ignored="false" />
-    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1364581999217" ignored="false" />
+    <file path="/sg.js.coffee" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1364749025869" ignored="false" />
     <file path="/README.rdoc" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1361324395567" ignored="false" />
     <file path="/mytooltip.js" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363133627736" ignored="false" />
     <file path="/sg.css.scss" changelist="172a782b-b933-49b2-8d28-3f724d2916e6" time="1363887991609" ignored="false" />
@@ -78,19 +80,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sg.js.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sg.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="38" selection-start="7136" selection-end="7136" vertical-scroll-proportion="0.0">
+            <state line="8" column="25" selection-start="212" selection-end="212" vertical-scroll-proportion="0.22591361">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/ror/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="11" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.1563055">
+            <state line="5" column="24" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.2692308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="89" selection-end="89" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
@@ -99,7 +110,7 @@
       <file leaf-file-name="vis.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="40" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+            <state line="5" column="22" selection-start="269" selection-end="269" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
@@ -143,8 +154,8 @@
         <option value="$PROJECT_DIR$/app/views/home/transitions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gflu/sg/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/ror/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee" />
       </list>
     </option>
   </component>
@@ -942,24 +953,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/transitions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="119" selection-start="910" selection-end="910" vertical-scroll-proportion="-10.461538" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="417" selection-end="417" vertical-scroll-proportion="0.027508091" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gflu/sg.css.scss">
@@ -994,30 +990,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="417" selection-end="417" vertical-scroll-proportion="0.028239202">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/vis.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="40" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="89" selection-end="89" vertical-scroll-proportion="0.14756945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="38" selection-start="7136" selection-end="7136" vertical-scroll-proportion="0.0">
+        <state line="5" column="22" selection-start="269" selection-end="269" vertical-scroll-proportion="-3.2692308">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ror/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="11" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.1563055">
+        <state line="5" column="24" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/gflu/sg/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="89" selection-end="89" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gflu/sg.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="212" selection-end="212" vertical-scroll-proportion="0.22591361">
           <folding />
         </state>
       </provider>

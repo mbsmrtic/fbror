@@ -1,5 +1,4 @@
 # The Google Flu Trends streamgraph code.
-# WIDTH = 700
 MARGIN = 40
 WIDTH = window.innerWidth - MARGIN
 HEIGHT = window.innerHeight - MARGIN
@@ -7,7 +6,7 @@ sgData = null
 weeks = null
 regions = null
 regionPaths = null
-graphOffsetType = 'zero'
+graphOffsetType = 'wiggle'
 duration = 750
 area = null
 streamgraph = null
@@ -235,6 +234,7 @@ draw = () ->
     )
 
   streamButton = d3.select('#stream')
+    .attr('disabled', true)
     .on('click', () ->
         streamButton.attr('disabled', true)
         stackButton.attr('disabled', null)
@@ -242,7 +242,6 @@ draw = () ->
         changeVisType('wiggle', streamButton)
     )
   stackButton = d3.select('#stack')
-    .attr('disabled', true)
     .on('click', () ->
         streamButton.attr('disabled', null)
         stackButton.attr('disabled', true)
