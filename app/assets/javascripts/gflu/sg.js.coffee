@@ -108,7 +108,12 @@ draw = () ->
       line.setAttribute('x1', onScale)
       line.setAttribute('x2', onScale)
       if (tooltip)
-        ttHtml = "#{ dateString } <br><table><tr><td>United States:</td><td> #{weeks[iDate]['US']}</td></tr>"
+        if (iRegion < 0)
+          imagesrc = "/assets/US.jpg"
+        else
+          imagesrc = "/assets/region#{iRegion+1}.jpg"
+        ttHtml = '<div class="left"><img width="36" height="36" src=' + imagesrc + '></img></div>'
+        ttHtml += "#{ dateString } <br><table><tr><td>United States:</td><td> #{weeks[iDate]['US']}</td></tr>"
         if (iRegion >= 0)
           ttHtml = ttHtml + "<tr><td>#{regions[iRegion].name}:</td>   <td>#{sgData[iRegion][iDate].y}</td></tr>"
         ttHtml = ttHtml + "</table>"
